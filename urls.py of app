@@ -1,0 +1,11 @@
+from django.contrib import admin
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('play-video/', views.play_video, name='play_video'),
+    path('verify-captcha/', views.verify_captcha, name='verify_captcha'),
+     path('captcha_view/', views.captcha_view, name='captcha_view'),
+     path('login/', views.login_view, name='login'),
+     path('', views.register_view, name='register'),
+]    
